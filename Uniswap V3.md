@@ -3,96 +3,133 @@
 
 ---
 
-<p>Uniswap v1 was launched in November 2018 as a proof of concept for automated market makers (AMMs), a type of exchange where anyone can pool assets into shared market making strategies.</p>
-<p>In May 2020, Uniswap v2 introduced new features and optimizations, setting the stage for exponential growth in AMM adoption. Less than one year since its launch, v2 has facilitated over $135bn in trading volume, ranking as one of the largest cryptocurrency spot exchanges in the world.</p>
-<p>Uniswap now serves as critical infrastructure for decentralized finance, empowering developers, traders, and liquidity providers to participate in a secure and robust financial marketplace.</p>
-<p>Today, we are excited to present an overview of Uniswap v3. We are targeting an  <strong>L1 Ethereum mainnet launch on May 5</strong>, with an  <strong>L2 deployment on Optimism set to follow shortly after.</strong></p>
-<p>Uniswap v3 introduces:</p>
+<h3 id="обзор-uniswap">Обзор Uniswap</h3>
+<p><strong>Что такое Uniswap:</strong><br>
+Uniswap — это децентрализованный протокол обмена (DEX), работающий на блокчейне Ethereum. Он позволяет пользователям напрямую обменивать криптовалюты без участия центрального посредника, используя механизм автоматизированного маркет-мейкинга (AMM).</p>
+<p><strong>История и эволюция:</strong><br>
+Uniswap был запущен в ноябре 2018 года в версии v1, предложив новый подход к децентрализованным обменам с использованием AMM. В мае 2020 года была представлена версия v2, которая внесла значительные улучшения, включая поддержку ERC20/ERC20 пулов и улучшение архитектуры. В мае 2021 года была выпущена версия v3, которая принесла инновации в виде концентрированной ликвидности и гибких комиссий.</p>
+<p>Uniswap v1 был запущен в ноябре 2018 года как концептуальный proof-of-concept для автоматизированных маркет-мейкеров (AMM), типа биржи, где любой может объединять активы в общие стратегии маркет-мейкинга.</p>
+<p>В мае 2020 года Uniswap v2 представил новые функции и оптимизации, заложив основу для экспоненциального роста внедрения AMM. Менее чем через год после запуска v2 осуществил более 135 миллиардов долларов США торгового объема, заняв место одной из крупнейших спотовых криптовалютных бирж в мире.</p>
+<p>Uniswap теперь служит критически важной инфраструктурой для децентрализованных финансов, предоставляя разработчикам, трейдерам и поставщикам ликвидности возможность участвовать в безопасном и надежном финансовом рынке.</p>
+<p>Сегодня мы рады представить обзор Uniswap v3. Мы планируем запустить  <strong>L1 Ethereum mainnet 5 мая</strong>, а  <strong>L2 развертывание на Optimism последует вскоре после этого.</strong></p>
+<h3 id="основные-концепции-uniswap-v3">Основные концепции Uniswap v3</h3>
+<p><strong>Автоматизированный маркет-мейкинг (AMM):</strong><br>
+Uniswap использует AMM вместо традиционной книги ордеров. AMM полагается на пулы ликвидности, в которые пользователи вносят пары токенов. Когда происходит обмен, токены из одного пула покупаются или продаются, изменяя баланс токенов и их относительные цены в пуле.</p>
+<p><strong>Концентрация ликвидности:</strong><br>
+Одной из ключевых инноваций Uniswap v3 является концентрированная ликвидность. Поставщики ликвидности (LP) могут выбрать определенные ценовые диапазоны, в которых они хотят предоставлять ликвидность, вместо того чтобы распределять ее по всей кривой цен. Это позволяет LP сосредоточить свой капитал там, где они ожидают наибольшую торговую активность, повышая эффективность использования капитала.</p>
+<p><strong>Незаменяемые токены (NFT):</strong><br>
+В Uniswap v3 каждая позиция ликвидности представлена в виде NFT. Это позволяет LP более гибко управлять своими позициями, поскольку каждый NFT может представлять уникальный диапазон ликвидности и уровень комиссий. Эти NFT могут быть куплены, проданы или использованы в других DeFi-приложениях.</p>
+<h3 id="ключевые-особенности-uniswap-v3">Ключевые особенности Uniswap v3</h3>
+<p>Uniswap v3 представляет:</p>
 <ul>
 <li>
-<p><strong>Concentrated liquidity,</strong>  giving individual LPs granular control over what price ranges their capital is allocated to. Individual positions are aggregated together into a single pool, forming one combined curve for users to trade against</p>
+<p><strong>Сконцентрированная ликвидность,</strong>  предоставляя отдельным LP-ам тонкий контроль над тем, в каких ценовых диапазонах распределяется их капитал. Отдельные позиции объединяются в один общий пул, формируя одну комбинированную кривую, против которой могут торговать пользователи.</p>
 </li>
 <li>
-<p><strong>Multiple fee tiers</strong>, allowing LPs to be appropriately compensated for taking on varying degrees of risk</p>
+<p><strong>Несколько уровней комиссий,</strong>  позволяя LP-ам получать адекватную компенсацию за принятие на себя различной степени риска.</p>
 </li>
 </ul>
-<p>These features make Uniswap v3  <strong>the most flexible and efficient AMM ever designed</strong>:</p>
+<p>Эти функции делают Uniswap v3  <strong>самым гибким и эффективным AMM, когда-либо разработанным</strong>:</p>
 <ul>
 <li>
-<p>LPs can provide liquidity with  <strong>up to 4000x capital efficiency</strong>  relative to Uniswap v2, earning  <strong>higher returns on their capital</strong></p>
+<p>LP-ам можно предоставить ликвидность с  <strong>капитальной эффективностью до 4000 раз</strong>  относительно Uniswap v2, получая  <strong>более высокую прибыль от своего капитала</strong></p>
 </li>
 <li>
-<p>Capital efficiency paves the way for low-slippage  <strong>trade execution that can surpass both centralized exchanges and stablecoin-focused AMMs</strong></p>
+<p>Капитальная эффективность прокладывает путь для исполнения сделок с низким скольжением,  <strong>которые могут превзойти как централизованные биржи, так и AMM, ориентированные на стабильные монеты</strong></p>
 </li>
 <li>
-<p>LPs can significantly  <strong>increase their exposure to preferred assets</strong>  and  <strong>reduce their downside risk</strong></p>
+<p>LP-ам можно значительно  <strong>увеличить свою экспозицию в отношении предпочтительных активов</strong>  и  <strong>снизить риск убытков</strong></p>
 </li>
 <li>
-<p>LPs can sell one asset for another by adding liquidity to a price range entirely above or below the market price, approximating  <strong>a fee-earning limit order that executes along a smooth curve</strong></p>
+<p>LP-ам можно продавать один актив за другой, добавляя ликвидность в ценовой диапазон полностью выше или ниже рыночной цены, приближаясь к  <strong>прибыльному лимитному ордеру, который исполняется по плавной кривой</strong></p>
 </li>
 </ul>
-<p>Uniswap’s  <strong>oracles are now far easier and cheaper to integrate</strong>. V3 oracles are capable of providing time-weighted average prices (TWAPs) on demand for any period within the last ~9 days. This removes the need for integrators to checkpoint historical values.</p>
-<p>Even with these groundbreaking design improvements, the  <strong>gas cost of v3 swaps on Ethereum mainnet is slightly cheaper than v2</strong>. Transactions made on the Optimism deployment will likely be  <em>significantly</em>  cheaper!</p>
-<p>Read on for more details on Uniswap v3. For a deeper technical overview check out the  <a href="https://uniswap.org/whitepaper-v3.pdf">Uniswap v3 Core whitepaper</a>, the  <a href="https://github.com/Uniswap/uniswap-v3-core/">Uniswap v3 Core smart contracts</a>.</p>
-<h1 id="concentrated-liquidity"><a href="https://blog.uniswap.org/uniswap-v3#concentrated-liquidity"></a>Concentrated Liquidity</h1>
-<p>In Uniswap v2, liquidity is distributed evenly along an x*y=k price curve, with assets reserved for all prices between 0 and infinity. For most pools, a majority of this liquidity is never put to use. As an example,  <strong>the v2 DAI/USDC pair reserves just ~0.50% of capital for trading between $0.99 and $1.01</strong>  , the price range in which LPs would expect to see the most volume and consequently earn the most fees.</p>
-<p>V2 LPs only earn fees on a small portion of their capital, which can fail to appropriately compensate for the price risk (“impermanent loss”) they take by holding large inventories in both tokens. Additionally, traders are often subject to high degrees of slippage as liquidity is spread thin across all price ranges.</p>
-<p>In Uniswap v3, LP’s can  <strong>concentrate their capital within custom price ranges, providing greater amounts of liquidity at desired prices.</strong>  In doing so,  <strong>LPs construct individualized price curves</strong>  that reflect their own preferences.</p>
-<p>LPs can combine any number of distinct concentrated positions within a single pool. For example, an LP in the ETH/DAI pool may choose to allocate $100 to the price ranges $1,000-$2,000 and an additional $50 to the ranges $1,500-$1,750.</p>
-<p>By doing so, an LP can approximate the shape of any automated market maker or active order book.</p>
-<p><strong>Users trade against the combined liquidity of all individual curves</strong>  with no gas cost increase per liquidity provider. Trading fees collected at a given price range are split pro-rata by LPs proportional to the amount of liquidity they contributed to that range.</p>
-<h2 id="capital-efficiency"><a href="https://blog.uniswap.org/uniswap-v3#capital-efficiency"></a>Capital Efficiency</h2>
-<p>By concentrating their liquidity, LPs can provide  <strong>the same liquidity depth as v2 within specified price ranges while putting far less capital at risk.</strong>  The capital saved can be held externally, invested in different assets, deposited elsewhere in DeFi, or used to increase exposure within the specified price range to earn more trading fees.</p>
-<p>Let’s illustrate with an example:</p>
-<p>Alice and Bob both want to provide liquidity in an ETH/DAI pool on Uniswap v3. They each have $1m. The current price of ETH is 1,500 DAI.</p>
-<p>Alice decides to deploy her capital across the entire price range (as she would have in Uniswap v2). She deposits 500,000 DAI and 333.33 ETH (worth a total of $1m).</p>
-<p>Bob instead creates a concentrated position, depositing only within the price range from 1,000 to 2,250. He deposits 91,751 DAI and 61.17 ETH, worth a total of about $183,500. He keeps the other $816,500 himself, investing it however he prefers.</p>
-<p>While Alice has put down 5.44x as much capital as Bob,  <em>they earn the same amount of fees</em>, as long as the ETH/DAI price stays within the 1,000 to 2,250 range.</p>
-<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/pgajcrSvF51NZo6WQ7QMT/aa4dc1497cab699f5b5747e69160d9c5/example_1.png" alt="example 1"></p>
-<p>Bob’s custom position also acts as a kind of stop-loss for his liquidity. Both Alice and Bob’s liquidity will be entirely denominated in ETH if the price of ETH falls to $0. However, Bob will have lost just $159,000, versus Alice’s $1m. Bob can use his additional $816,500 to hedge against downside exposure or to invest in any other conceivable strategy.</p>
-<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/7fJVwfL5ZEqwsfiAH6JvCV/74dcdb9c8d2500547e7bd1df272a14da/example_2.png" alt="example 2"></p>
-<p>Instead of providing equivalent liquidity depth as a v2 LPs with less capital, v3 LPs can choose to provide  <strong>greater depth with the same amount of capital</strong>  as their v2 counterparts. This requires  <strong>taking on more price risk</strong>  (“impermanent loss”) while supporting greater amounts of trading and earning higher fees.</p>
-<p>LPs in more stable pools will likely provide liquidity in particularly narrow ranges. If the ~$25m currently held in the Uniswap v2 DAI/USDC pair was instead concentrated between 0.99 — 1.01 in v3, it would provide the same depth as $5bn in Uniswap v2 as long as the price stayed within that range.  <strong>If the ~$25m was concentrated into the 0.999 - 1.001 range it would provide the same depth as $50b in Uniswap v2.</strong></p>
-<p>The tool below calculates the capital efficiency gains of a concentrated liquidity position (centered around the current price) relative to allocating capital across the entire price curve.</p>
-<p>Liquidity Deposit Value</p>
-<p>Value of paired tokens</p>
-<p>$</p>
-<p>Select ETH price range</p>
-<p>Current Price: $1,820</p>
-<p>V3 Range Position</p>
-<p>Capital Required</p>
-<p>$150,000</p>
-<p>Fees per $ vs. V2</p>
-<p>5.24x</p>
-<p>V2 Position</p>
-<p>Capital Required</p>
-<p>$785,779</p>
-<p>These two positions will earn equal fees and perform idenitcally while the price remains between $1200  and $2800.</p>
-<p>At launch, capital efficiency gains will max out at 4000x for LPs providing liquidity within a single 0.10% price range. The v3 pool factory is technically capable of supporting ranges as granular as 0.02%, translating to a maximum 20,000x capital efficiency gains relative to v2. However, more granular pools can increase swap gas costs and might be more useful on Layer 2.</p>
-<h2 id="active-liquidity"><a href="https://blog.uniswap.org/uniswap-v3#active-liquidity"></a>Active Liquidity</h2>
-<p>If market prices move outside an LP’s specified price range, their liquidity is effectively removed from the pool and is no longer earning fees. In this state, an LP’s liquidity is composed entirely of the less valuable of the two assets, until the market price moves back into their specified price range or they decide to update their range to account for current prices.</p>
-<p>In v3, it is theoretically possible for no liquidity to exist in a given price range. However, we expect rational LPs to continuously update their price ranges to cover the current market price.</p>
-<h2 id="range-orders"><a href="https://blog.uniswap.org/uniswap-v3#range-orders"></a>Range Orders</h2>
-<p>v3’s LP customizability opens up a novel order feature to complement market orders, which we are calling “range orders”.</p>
-<p>LPs can deposit a single token in a custom price range above or below the current price: if the market price enters into their specified range, they sell one asset for another along a smooth curve while earning swap fees in the process.</p>
-<p>Depositing to a narrow range feels similar to a traditional limit order. For example, if the current price of DAI is below 1.001 USDC, Alice could add $10m worth of DAI to the range of 1.001 — 1.002 DAI/USDC.</p>
-<p>Once DAI trades above 1.002 DAI/USDC, Alice’s liquidity will have fully converted into USDC. Alice must withdraw her liquidity (or use a third-party service to withdraw on her behalf) to avoid automatically converting back into DAI if DAI/USDC starts trading below 1.002.</p>
-<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/2l33qlFlZ6f1KmeJOZ3rDp/55b6546fa088b619d70dcb3a5a54889d/range.png" alt="range"></p>
-<p>The average execution price of a fully executed range order is the geometric average of the minimum and maximum price: in Alice’s case, the execution price equals 1.001499 DAI/USDC for a total of $1,001,499. This execution price does not account for additional swap fees earned during the period in which prices trade within the 1.001 — 1.002 DAI/USDC range.</p>
-<p>Range orders within wider ranges may prove particularly useful for  <strong>profit-taking, buying the dip,</strong>  and  <strong>primary issuance events</strong>: in the later use case, issuers are now able to deposit liquidity in a single asset and specify the exact range of prices across which they wish to sell their tokens.</p>
-<h2 id="non-fungible-liquidity"><a href="https://blog.uniswap.org/uniswap-v3#non-fungible-liquidity"></a>Non-Fungible Liquidity</h2>
-<p>As a byproduct of per-LP custom price curves, liquidity positions are no longer fungible and are not represented as ERC20 tokens in the core protocol.</p>
-<p>Instead, LP positions will be represented by non-fungible tokens (NFTs). However, common shared positions can be made fungible (ERC20) via peripheral contracts or through other partner protocols. Additionally, trading fees are no longer automatically reinvested back into the pool on LPs’ behalf.</p>
-<p>Over time we expect increasingly sophisticated strategies to be tokenized, making it possible for LPs to participate while maintaining a passive user experience. This could include multi-positions, auto-rebalancing to concentrate around the market price, fee reinvestment, lending, and more.</p>
-<h1 id="flexible-fees"><a href="https://blog.uniswap.org/uniswap-v3#flexible-fees"></a>Flexible Fees</h1>
-<p>Uniswap v3 offers LPs three separate fee tiers per pair — 0.05%, 0.30%, and 1.00%. This array of options ensures that LPs tailor their margins according to expected pair volatility: LPs take on more risk in non-correlated pairs like ETH/DAI and, conversely, take on minimal risk in correlated pairs like USDC/DAI.</p>
-<p>Although distinct fee tiers may lead to some degree of liquidity fragmentation, we believe that most pairs will calibrate to an obvious fee tier, which then serves as the canonical market. We expect like-kind asset pairs to congregate around the 0.05% fee tier and pairs like ETH/DAI to use 0.30%, while exotic assets might find 1.00% swap fees more appropriate. governance can add additional fee tiers as needed.</p>
-<p>Uniswap v2 introduced a protocol fee switch, which allowed a flat 5 basis point (16.66% of LP fees) fee to be turned on by governance. Uniswap v3 protocol fees are far more flexible. Fees will be off by default, but can be turned on by governance on a per-pool basis and set between 10% and 25% of LP fees.</p>
-<h1 id="advanced-oracles"><a href="https://blog.uniswap.org/uniswap-v3#advanced-oracles"></a>Advanced Oracles</h1>
-<p>Uniswap v2 introduced time weighted average price (TWAP) oracles. These oracles serve as a critical piece of DeFi infrastructure, and have been integrated into dozens of projects, including Compound and Reflexer.</p>
-<p>V2 oracles work by storing cumulative sums of Uniswap pair prices on a per-second basis. These price sums can be checked once at the beginning of a period and once at the end to calculate an accurate TWAP over that period.</p>
-<p>Uniswap v3 offers significant improvements to the TWAP oracle, making it possible to calculate any recent TWAP within the past ~9 days in a single on-chain call. This is achieved by storing an array of cumulative sums instead of just one.</p>
-<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/645gRZmrsruhM4dXb2obKR/581ef8cb9406de64f2acd27145f1e778/oracles.png" alt="oracles"></p>
-<p>This array of historical price accumulators makes it far easier and cheaper to create more advanced oracles that include simple-moving averages (SMA), exponential moving averages (EMA), outlier filtering, and more.</p>
-<p>Despite this major improvement, the gas cost to Uniswap traders for keeping oracles up to date has been reduced by ~50% relative to v2. The costs for calculating TWAPs in external smart contracts is significantly cheaper as well.</p>
+<p><strong>Оракулы Uniswap теперь намного проще и дешевле интегрировать</strong>. Оракулы V3 способны предоставлять средневзвешенные по времени цены (TWAP) по запросу для любого периода за последние ~ 9 дней. Это устраняет необходимость интеграторов сохранять исторические значения.</p>
+<p>Даже с этими революционными улучшениями в дизайне  <strong>стоимость газа для свопов v3 в основной сети Ethereum немного дешевле, чем v2</strong>. Транзакции, совершаемые в развертывании Optimism, вероятно, будут  <em>значительно</em>  дешевле!</p>
+<p><strong>Концентрированная ликвидность:</strong><br>
+LP могут выбрать узкие ценовые диапазоны для предоставления ликвидности, что увеличивает их потенциальную доходность. Например, если LP считает, что цена ETH будет оставаться между $2000 и $3000, он может сосредоточить свою ликвидность в этом диапазоне, что позволяет зарабатывать больше комиссионных на торговле в этом диапазоне.</p>
+<p><strong>Более эффективное использование капитала:</strong><br>
+В Uniswap v2 ликвидность распределяется по всей кривой цен, что может приводить к неэффективному использованию капитала. В v3 LP могут концентрировать ликвидность в узких диапазонах, что позволяет им зарабатывать больше комиссионных при меньших инвестициях.</p>
+<p><strong>Комиссионные уровни:</strong><br>
+Uniswap v3 предлагает три уровня комиссий: 0.05%, 0.30% и 1%. Это дает LP возможность выбирать уровень риска и доходности, подходящий для конкретной пары токенов. Например, более стабильные пары могут выбирать низкие комиссии, а более волатильные — высокие.</p>
+<p><strong>Гибкость:</strong><br>
+LP могут динамически менять свои позиции, добавлять или убирать ликвидность, выбирать различные ценовые диапазоны и уровни комиссий. Это позволяет LP адаптироваться к изменяющимся рыночным условиям и лучше управлять своими рисками.</p>
+<h3 id="технические-аспекты">Технические аспекты</h3>
+<p>Сконцентрированная ликвидность</p>
+<p>В Uniswap v2 ликвидность распределяется равномерно вдоль ценовой кривой x*y=k, с резервами активов для всех цен от 0 до бесконечности. Для большинства пулов большая часть этой ликвидности никогда не используется. Например,  <strong>пара v2 DAI/USDC резервирует всего ~ 0,50% капитала для торговли в диапазоне цен от 0,99 до 1,01</strong>  , в том ценовом диапазоне, в котором LP-и ожидают увидеть наибольший объем и, следовательно, получить наибольшие комиссионные.</p>
+<p>LP-и v2 получают комиссионные только с небольшой части своего капитала, что может не компенсировать соответствующим образом ценовой риск («непостоянные потери»), который они принимают на себя, удерживая большие запасы в обоих токенах. Кроме того, трейдеры часто сталкиваются с высоким скольжением, поскольку ликвидность распределяется по всем ценовым диапазонам.</p>
+<p>В Uniswap v3 LP-ам можно  <strong>концентрировать свой капитал в пределах заданных ценовых диапазонов, обеспечивая большую ликвидность по желаемым ценам.</strong>  Таким образом,  <strong>LP-и создают индивидуальные ценовые кривые</strong>  , которые отражают их собственные предпочтения.</p>
+<p>LP-и могут объединять любое количество отдельных сконцентрированных позиций в одном пуле. Например, LP в пуле ETH/DAI может решить выделить 100 долларов США в ценовых диапазонах от 1000 до 2000 долларов США и дополнительно 50 долларов США в диапазонах от 1500 до 1750 долларов США.</p>
+<p>Таким образом, LP может приблизить форму любого автоматизированного маркет-мейкера или активного стакана заявок.</p>
+<p>Капитальная эффективность</p>
+<p>Концентрируя свою ликвидность, LP-и могут обеспечить  <strong>такую же глубину ликвидности, как v2 в заданных ценовых диапазонах, рискуя при этом гораздо меньшим капиталом.</strong>  Сохраненный капитал можно хранить отдельно, инвестировать в разные активы, депонировать в другие места в DeFi или использовать для увеличения экспозиции в заданном ценовом диапазоне, чтобы получать больше комиссионных за торговлю.</p>
+<p>Давайте проиллюстрируем на примере:</p>
+<p>Алиса и Боб хотят предоставить ликвидность в пуле ETH/DAI на Uniswap v3. У каждого из них по 1 миллион долларов США. Текущая цена ETH составляет 1500 DAI.</p>
+<p>Алиса решает развернуть свой капитал по всему ценовому диапазону (как она бы сделала это в Uniswap v2). Она вносит 500 000 DAI и 333,33 ETH (что составляет в общей сложности 1 миллион долларов США).</p>
+<p>Боб, наоборот, создает сконцентрированную позицию, внося деньги только в ценовой диапазон от 1000 до 2250. Он вносит 91 751 DAI и 61,17 ETH, что составляет в общей сложности около 183 500 долларов США. Он оставляет себе оставшиеся 816 500 долларов США, инвестируя их по своему усмотрению.</p>
+<p>Хотя Алиса вложила в 5,44 раза больше капитала, чем Боб,  <em>они получают одинаковую сумму комиссионных</em>  , пока цена ETH/DAI остается в диапазоне от 1000 до 2250.</p>
+<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/pgajcrSvF51NZo6WQ7QMT/aa4dc1497cab699f5b5747e69160d9c5/example_1.png" alt="пример 1"></p>
+<p>Позиция Боба также действует как своего рода стоп-лосс для его ликвидности. Ликвидность как Алисы, так и Боба будет полностью выражена в ETH, если цена ETH упадет до 0 долларов США. Однако Боб потеряет всего 159 000 долларов США, в то время как Алиса потеряет 1 миллион долларов США. Боб может использовать свои дополнительные 816 500 долларов США для хеджирования от снижения стоимости или инвестирования в любую другую мыслимую стратегию.</p>
+<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/7fJVwfL5ZEqwsfiAH6JvCV/74dcdb9c8d2500547e7bd1df272a14da/example_2.png" alt="пример 2"></p>
+<p>Вместо того, чтобы обеспечивать эквивалентную глубину ликвидности, как LP-и v2 с меньшим капиталом, LP-и v3 могут выбрать  <strong>большую глубину с тем же количеством капитала</strong>  , что и их коллеги из v2. Это требует  <strong>принятия на себя большего ценового риска</strong>  («непостоянные потери»), одновременно поддерживая большие объемы торговли и получая более высокие комиссионные.</p>
+<p>LP-и в более стабильных пулах, вероятно, будут предоставлять ликвидность в особенно узких диапазонах. Если бы ~ 25 миллионов долларов США, которые в настоящее время хранятся в паре Uniswap v2 DAI/USDC, были бы  <strong>сосредоточены в диапазоне от 0,99 до 1,01 в v3, это обеспечило бы ту же глубину, что и 5 миллиардов долларов США в Uniswap v2, пока цена оставалась в этом диапазоне.</strong>  <strong>Если бы ~ 25 миллионов долларов США были сконцентрированы в диапазоне от 0,999 до 1,001, это обеспечило бы ту же глубину, что и 50 миллиардов долларов США в Uniswap v2.</strong></p>
+<p>При запуске прирост капитальной эффективности достигнет максимума в 4000 раз для LP-ов, предоставляющих ликвидность в пределах одного ценового диапазона 0,10%. Фабрика пулов v3 технически способна поддерживать диапазоны с гранулярностью до 0,02%, что соответствует максимальному приросту капитальной эффективности в 20 000 раз по сравнению с v2. Однако более гранулированные пулы могут увеличить стоимость газа для свопа и могут быть более полезны на уровне 2.</p>
+<p>Активная ликвидность</p>
+<p>Если рыночные цены выходят за пределы заданного LP-ом ценового диапазона, их ликвидность фактически удаляется из пула и больше не приносит комиссионных. В этом состоянии ликвидность LP-а состоит полностью из менее ценного из двух активов, пока рыночная цена не вернется в их заданный ценовой диапазон или пока они не решат обновить свой диапазон с учетом текущих цен.</p>
+<p>В v3 теоретически возможно, что в заданном ценовом диапазоне не будет ликвидности. Однако мы ожидаем, что рациональные LP-и будут постоянно обновлять свои ценовые диапазоны, чтобы охватывать текущую рыночную цену.</p>
+<p>Диапазонные ордера</p>
+<p>Возможность настройки LP в v3 открывает новую функцию ордера, дополняющую рыночные ордера, которую мы называем «диапазонными ордерами».</p>
+<p>LP-и могут внести один токен в заданный ценовой диапазон выше или ниже текущей цены: если рыночная цена входит в их заданный диапазон, они продают один актив за другой по плавной кривой, получая при этом комиссионные за своп.</p>
+<p>Внесение средств в узкий диапазон напоминает традиционный лимитный ордер. Например, если текущая цена DAI ниже 1,001 USDC, Алиса может добавить 10 миллионов долларов США в DAI в диапазоне от 1,001 до 1,002 DAI/USDC.</p>
+<p>Как только DAI торгуется выше 1,002 DAI/USDC, ликвидность Алисы будет полностью преобразована в USDC. Алисе необходимо вывести свою ликвидность (или использовать сторонний сервис для вывода от ее имени), чтобы избежать автоматического преобразования обратно в DAI, если DAI/USDC начнет торговаться ниже 1,002.</p>
+<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/2l33qlFlZ6f1KmeJOZ3rDp/55b6546fa088b619d70dcb3a5a54889d/range.png" alt="диапазон"></p>
+<p>Средняя цена исполнения полностью исполненного диапазонного ордера - это геометрическое среднее минимальной и максимальной цены: в случае Алисы цена исполнения равна 1,001499 DAI/USDC на общую сумму 1 001 499 долларов США. Эта цена исполнения не учитывает дополнительные комиссионные за своп, полученные за период, в течение которого цены торгуются в диапазоне от 1,001 до 1,002 DAI/USDC.</p>
+<p>Диапазонные ордера в более широких диапазонах могут оказаться особенно полезными для  <strong>фиксации прибыли, покупки на просадке</strong>  и  <strong>первичных событий эмиссии</strong>: в последнем случае эмитенты теперь могут депонировать ликвидность в один актив и указать точный диапазон цен, по которым они хотят продавать свои токены.</p>
+<p>Незаменимые токены ликвидности</p>
+<p>Как побочный продукт индивидуальных ценовых кривых для каждого LP, позиции ликвидности больше не являются взаимозаменяемыми и не представлены в виде токенов ERC20 в основном протоколе.</p>
+<p>Вместо этого позиции LP будут представлены  <strong>незаменимыми токенами (NFT)</strong>. Однако общие позиции могут быть сделаны взаимозаменяемыми (ERC20) с помощью периферийных контрактов или через другие партнерские протоколы. Кроме того, комиссионные за торговлю больше не переинвестируются автоматически в пул от имени LP-ов.</p>
+<p>Со временем мы ожидаем, что все более сложные стратегии будут токенизированы, что позволит LP-ам участвовать в них, сохраняя пассивный пользовательский опыт. Это может включать в себя многопозиции, автоматическую перебалансировку для концентрации вокруг рыночной цены, переинвестирование комиссионных, кредитование и многое другое.</p>
+<p>Гибкие комиссии</p>
+<p>Uniswap v3 предлагает LP-ам три отдельных уровня комиссионных за пару - 0,05%, 0,30% и 1,00%. Это множество вариантов гарантирует, что LP-и будут подстраивать свои маржи в соответствии с ожидаемой волатильностью пары: LP-и берут на себя больше риска в некоррелированных парах, таких как ETH/DAI, и, наоборот, принимают на себя минимальный риск в коррелированных парах, таких как USDC/DAI.</p>
+<p>Хотя отдельные уровни комиссионных могут привести к некоторой фрагментации ликвидности, мы считаем, что большинство пар будет калиброваться к очевидному уровню комиссионных, который затем будет служить каноническим рынком. Мы ожидаем, что пары однородных активов будут собираться вокруг уровня комиссионных 0,05%, а пары, такие как ETH/DAI, будут использовать 0,30%, в то время как экзотические активы могут найти более подходящим уровень комиссионных за своп в 1,00%. управление может добавлять дополнительные уровни комиссионных по мере необходимости.</p>
+<p>Uniswap v2 представил переключатель комиссионных протокола, который позволял включать фиксированную комиссию в 5 базисных пунктов (16,66% от комиссионных LP-а) по решению управления. Комиссионные протокола Uniswap v3 намного более гибкие. Комиссии будут отключены по умолчанию, но могут быть включены управлением для каждого пула и установлены в диапазоне от 10% до 25% от комиссионных LP.</p>
+<p>Расширенные оракулы</p>
+<p>Uniswap v2 представил оракулы средневзвешенных по времени цен (TWAP). Эти оракулы служат критически важной частью инфраструктуры DeFi и были интегрированы в десятки проектов, включая Compound и Reflexer.</p>
+<p>Оракулы V2 работают, сохраняя кумулятивные суммы цен пары Uniswap на секундной основе. Эти суммы цен можно проверить один раз в начале периода и один раз в конце, чтобы рассчитать точную средневзвешенную по времени цену (TWAP) за этот период.</p>
+<p>Uniswap v3 предлагает значительные улучшения оракула TWAP, что позволяет рассчитать любую недавнюю средневзвешенную по времени цену (TWAP) за последние ~ 9 дней в одном вызове в цепочке. Это достигается за счет хранения массива кумулятивных сумм, а не только одной.</p>
+<p><img src="https://images.ctfassets.net/oc3ca6rftwdu/645gRZmrsruhM4dXb2obKR/581ef8cb9406de64f2acd27145f1e778/oracles.png" alt="оракулы"></p>
+<p>Этот массив исторических накопителей цен делает намного проще и дешевле создавать более продвинутые оракулы, которые включают простые скользящие средние (SMA), экспоненциальные скользящие средние (EMA), фильтрацию выбросов и многое другое.</p>
+<p>Несмотря на это существенное улучшение, стоимость газа для трейдеров Uniswap для поддержания актуальности оракулов была снижена примерно на 50% по сравнению с v2. Стоимость расчета TWAP во внешних смарт-контрактах также значительно ниже.</p>
+<p><strong>Пользователи торгуют против совокупной ликвидности всех индивидуальных кривых</strong>  без увеличения стоимости газа для каждого поставщика ликвидности. Торговые комиссии, собираемые в определенном ценовом диапазоне, распределяются пропорционально между LP-ами пропорционально количеству ликвидности, которое они внесли в этот диапазон.</p>
+<p><strong>Как работают пулы ликвидности:</strong><br>
+Пулы ликвидности состоят из пар токенов, таких как ETH/DAI. Пользователи добавляют свои токены в эти пулы, предоставляя ликвидность, и получают комиссионные от каждой сделки, проходящей через пул. В Uniswap v3 LP могут настроить, в каком ценовом диапазоне они хотят предоставлять ликвидность. Это делается путем установки минимальной и максимальной цены, в пределах которой будет активна их ликвидность.</p>
+<p><strong>Формулы ценообразования:</strong><br>
+Цены в пулах Uniswap определяются алгоритмом AMM, использующим формулу постоянного произведения x⋅y=kx \cdot y = kx⋅y=k, где xxx и yyy — количество токенов в пуле, а kkk — постоянная. При торговле одного токена на другой баланс токенов изменяется, что приводит к изменению их цен. В Uniswap v3 эта формула модифицирована, чтобы учитывать концентрированную ликвидность.</p>
+<p><strong>Имперманентные потери:</strong><br>
+Имперманентные потери возникают, когда цена токена меняется по отношению к цене на момент добавления в пул ликвидности. Это явление описывает потенциальную убыток LP, который может возникнуть, если цена активов сильно колеблется. В Uniswap v3, благодаря концентрированной ликвидности, LP могут снизить влияние имперманентных потерь, выбирая более узкие ценовые диапазоны и управляя своими позициями более активно.</p>
+<h3 id="примеры-использования">Примеры использования</h3>
+<p><strong>Трейдинг:</strong><br>
+Трейдеры могут использовать Uniswap v3 для обмена токенов без необходимости в центральном посреднике. Протокол обеспечивает мгновенную ликвидность и возможность обмена различных токенов с низкими комиссиями и минимальными задержками.</p>
+<p><strong>Доходность LP:</strong><br>
+Поставщики ликвидности зарабатывают комиссионные от каждой сделки, проходящей через их пул. Выбор определенных ценовых диапазонов и уровней комиссий позволяет LP оптимизировать свои доходы. LP могут использовать аналитические инструменты для мониторинга своих позиций и оценки потенциальных доходов и рисков. Управление рисками и активное управление позициями являются ключевыми аспектами успешного предоставления ликвидности.</p>
+<h3 id="преимущества-и-недостатки">Преимущества и недостатки</h3>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li><strong>Повышенная эффективность капитала:</strong> Концентрированная ликвидность позволяет LP зарабатывать больше комиссионных на меньших инвестициях.</li>
+<li><strong>Гибкость:</strong> LP могут выбирать ценовые диапазоны, менять свои позиции и адаптироваться к рыночным условиям.</li>
+<li><strong>Разнообразие комиссионных уровней:</strong> Возможность выбора уровня комиссий в зависимости от пары токенов и рыночных условий.</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li><strong>Более сложная механика:</strong> Uniswap v3 требует большего понимания и активного управления по сравнению с v2.</li>
+<li><strong>Риск имперманентных потерь:</strong> LP подвержены рискам, связанным с изменением цен токенов.</li>
+<li><strong>Необходимость активного управления:</strong> LP должны активно управлять своими позициями для максимизации доходов и минимизации рисков.</li>
+</ul>
+<h3 id="сравнение-с-другими-dex">Сравнение с другими DEX</h3>
+<p><strong>Сравнение с Uniswap v2:</strong><br>
+Uniswap v3 предлагает более эффективное использование капитала, возможность выбора ценовых диапазонов и уровней комиссий, что делает его более гибким и прибыльным для LP. Однако это требует большего понимания и активного управления. В v2 ликвидность распределяется равномерно по всей кривой цен, что упрощает процесс предоставления ликвидности, но снижает эффективность капитала.</p>
+<p><strong>Сравнение с конкурентами:</strong><br>
+По сравнению с другими децентрализованными биржами, такими как SushiSwap и Balancer, Uniswap v3 выделяется своей инновационной моделью концентрированной ликвидности и использованием NFT для представления позиций. SushiSwap и Balancer предлагают свои уникальные преимущества, такие как гибкость пулов ликвидности и различные модели вознаграждения, но Uniswap v3 предоставляет более точные инструменты для управления ликвидностью и оптимизации доходов.</p>
+<h3 id="заключение">Заключение</h3>
+<p>Uniswap v3 представляет собой значительное улучшение по сравнению с предыдущими версиями, предлагая более эффективное использование капитала и гибкость для поставщиков ликвидности. Хотя это требует большего понимания и управления, потенциальные выгоды для трейдеров и LP делают Uniswap v3 важным инструментом в арсенале любой трейдинговой компании. Применение инновационных технологий, таких как концентрированная ликвидность и NFT, позволяет Uniswap v3 оставаться лидером среди децентрализованных бирж и предоставляет пользователям новые возможности для торговли и заработка в мире DeFi.</p>
 
